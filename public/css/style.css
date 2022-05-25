@@ -1,0 +1,17 @@
+@import "grid.css";
+@import "button.css";
+@import "div.css";
+@import "card.css";
+@import "wrapper.css";
+@import "form.css";
+
+:root {
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --default-black: #212529;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--default-black);
+}
+

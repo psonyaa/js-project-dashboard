@@ -1,0 +1,114 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" media="print" href="css/style.css" onload="this.media='all'">
+    <title>Blockchain TODO</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+<div class="row" id="main-menu">
+    <div class="column">
+        <div class="shadowbox" style="height: 150px">
+            <form id="add-tasks-form">
+                <div class="row">
+                    <div class="col-sm-11">
+                        <label class="form-label" for="form-task">Task name</label>
+                        <input type="text" class="form-control" name="task" id="form-task" placeholder="Task name">
+                    </div>
+                    <div class="col-sm-1 x-end">
+                        <input type="submit" class="btn btn--primary" value="Add">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="column">
+        <div class="shadowbox" style="height: 150px">
+            <form id="add-users-form">
+                <div class="row">
+                    <div class="col-sm-11">
+                        <label class="form-label" for="form-user">User name</label>
+                        <input type="text" class="form-control" name="user" id="form-user" placeholder="Username">
+                    </div>
+                    <div class="col-sm-1 x-end">
+                        <input type="submit" class="btn btn--primary" value="Add">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="column">
+        <div class="shadowbox" style="height: 150px">
+            <form id="assign-task-form">
+                <div class="row">
+                    <div class="col-sm-11">
+                        <label class="form-label" for="tasks-list">Task to assign</label>
+                        <select id="tasks-list" form="assign-task-form"></select>
+                    </div>
+                    <div class="col-sm-11">
+                        <label class="form-label" for="users-list">User assign task to</label>
+                        <select id="users-list" form="assign-task-form"></select>
+                    </div>
+                    <div class="col-sm-1 x-end">
+                        <input type="submit" class="btn btn--primary" value="Assign">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="column">
+        <div class="shadowbox" style="height: 150px">
+            <form id="delete-task-form">
+                <div class="row">
+                    <div class="col-sm-11">
+                        <label class="form-label" for="delete-tasks-list">Task to delete</label>
+                        <select id="delete-tasks-list" form="delete-task-form"></select>
+                    </div>
+                    <div class="col-sm-1 x-end">
+                        <input type="submit" class="btn btn--primary" value="Delete">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="column">
+        <div class="shadowbox" style="height: 150px">
+            <form id="move-task-form">
+                <div class="row">
+                    <div class="col-sm-11">
+                        <label class="form-label" for="move-tasks-list">Task name</label>
+                        <select id="move-tasks-list" form="move-task-form"></select>
+                    </div>
+                    <div class="col-sm-11">
+                        <label class="form-label" for="status-list">User assign task to</label>
+                        <select id="status-list" form="move-task-form">
+                            <option>new</option>
+                            <option>progress</option>
+                            <option>done</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-1 x-end">
+                        <input type="submit" class="btn btn--primary" value="Change">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<p></p>
+<div class="wrapper" id="Sings">
+    <div class="column">TODO</div>
+    <div class="column">IN PROGRESS</div>
+    <div class="column">DONE</div>
+</div>
+<div class="wrapper" id="task-row">
+    <div class="column" id="todo"></div>
+    <div class="column" id="progress"></div>
+    <div class="column" id="done"></div>
+</div>
+</body>
+</html>

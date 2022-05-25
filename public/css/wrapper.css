@@ -1,0 +1,14 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: khaki;
+}
+.column {
+    border-width: 2px;
+    border-style: solid;
+    border-color: khaki;
+}
